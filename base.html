@@ -34,7 +34,7 @@
      text-decoration: none;
      padding: 4px;
  }
- .topnav a:hover, .topnav a:active {
+ .topnav .whiteNav a:hover, .topnav .whiteNav a:active {
      border-bottom-style : solid ;
      border-bottom-color: red;
  }
@@ -83,14 +83,14 @@
 	.rightarticle { width : 33% ; }
 }
 @media ( max-width : 600px ) {
-    #top { position : relative : }
+    #top { position : relative ; }
 	.leftarticle { width : 100% ;  }
 	.centerarticle { width : 100% ; }
 	.rightarticle { width : 100% ; }
     .articles .floatedSection ul li { clear : left ;}
     #main .floatedSection { margin-top : 45% ;    }
 }
- @media handheld {
+ @media (max-width : 480px ) {
      #title { display : none; }
      #main .chicago { display : none; }
  }
@@ -189,11 +189,11 @@
             <section class="floatedSection">
                 <nav class="topnav">
                     <ul>
-                        <li><a href="http://www.cityofchicago.org/city/en/about.html">About</a><br /></li>
-                        <li><a href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a><br /></li>
+                        <li class="whiteNav"><a href="http://www.cityofchicago.org/city/en/about.html">About</a><br /></li>
+                        <li class="whiteNav"><a href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a><br /></li>
                         <li><a href="base.html" id="homelink">Chicago</a><br /></li>
-                        <li><a href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a><br /></li>
-                        <li><a href="http://www.cityofchicago.org/city/en/progs.html">Programs</a><br /></li>
+                        <li class="whiteNav"><a href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a><br /></li>
+                        <li class="whiteNav"><a href="http://www.cityofchicago.org/city/en/progs.html">Programs</a><br /></li>
                     </ul>
                 </nav>
             </section>
