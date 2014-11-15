@@ -76,11 +76,19 @@
 .articles .floatedSection ul {
 	clear : left ;
 }
-@media ( min-device-width : 600px ) {
+@media ( min-width : 600px ) {
 	.articles { width : 100% ; } 
 	.leftarticle {  width : 33% ;  }
 	.centerarticle { width : 33% ; }
 	.rightarticle { width : 33% ; }
+}
+@media ( max-width : 600px ) {
+    #top { position : relative ; }
+	.leftarticle { width : 100% ;  }
+	.centerarticle { width : 100% ; }
+	.rightarticle { width : 100% ; }
+    .articles .floatedSection ul li { clear : left ;}
+    #main  .floatedSection { margin-top : 45% ;    }
 }
 @media ( max-device-width : 600px ) {
     #top { position : relative ; }
