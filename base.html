@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+ <style>
+     body {
+         font-family: 'Ubuntu', sans-serif;
+     }
+     #top {
+         position : fixed ;
+         width : 100% ;
+     }
+ .topnav {
+     background-color: black ;
+     opacity: .75 ;
+     width : 100% ;
+     overflow: hidden;
+     margin : 0 ;
+     padding : 0 ;
+     list-style-type: none;
+     float : left ;
+ }
+ .topnav li {
+     display : inline-block;
+     text-align: center;
+     float : left ;
+     width : 20% ;
+ }
+ .topnav a:link, .topnav a:visited {
+     display: block ;
+     font-weight: bold;
+     color: white ;
+     text-align: center;
+     text-decoration: none;
+     padding: 4px;
+ }
+ .topnav a:hover, .topnav a:active {
+     border-bottom-style : solid ;
+     border-bottom-color: red;
+ }
+ #homelink {
+     color: red ;
+ }
+ 
+ 
+ 
+#bottom {
+	float : left ;
+	overflow : hidden ;
+}
+.articles {
+	clear : left ;
+	float : left ;
+    }
+
+.floatedSection  { 
+	float : left ;
+	width : 100% ;
+}
+.leftarticle {
+	float : left ;
+	width : 30% ;
+    margin : 1px ;
+}
+.centerarticle {
+	float : left ;
+    width : 30%;
+    margin : 1px ;
+}
+.rightarticle {
+	float : left ;
+    width : 30% ;
+    margin : 1px ;
+}
+
+.articles .floatedSection ul {
+	clear : left ;
+}
+@media ( min-width : 600px ) {
+	.articles { width : 100% ; } 
+	.leftarticle {  width : 33% ;  }
+	.centerarticle { width : 33% ; }
+	.rightarticle { width : 33% ; }
+}
+@media ( max-width : 600px ) {
+    #top { position : relative : }
+	.leftarticle { width : 100% ;  }
+	.centerarticle { width : 100% ; }
+	.rightarticle { width : 100% ; }
+    .articles .floatedSection ul li { clear : left ;}
+    #main .floatedSection { margin-top : 45% ;    }
+}
+ @media handheld {
+     #title { display : none; }
+     #main .chicago { display : none; }
+ }
+#title {
+	text-align : center ;
+}
+ h4 , h5{
+     text-align : center ;
+ }
+
+.dash {
+    display : none ;
+}
+ .chicago {
+     background : url("images/daleylightgrey.jpg")  ;
+     background-size : 100%   ;
+     background-repeat : no-repeat ;
+ }
+ #main .floatedSection {
+     margin-top : 25% ;
+ }
+ .middlesection {
+     float : left ;
+    width : 100% ;
+    clear : left ;
+    margin-right : auto  ;
+}
+
+.rightarticle   .sideNav {
+    float : right;
+    width : 215px ;
+    list-style-type: none;
+    text-align : right ;
+    cursor: pointer;
+    outline: none ;
+    width : 225px ;
+    margin : 2% ;
+    color : black ;
+    border-radius : 15px ;
+}
+   
+.sideNavClicked {
+    font-weight: bold;
+    font-style: italic;
+}
+ 
+.sideNav li:hover {
+    font-weight: bold;
+    font-style: italic;
+    background-color : black;
+     border-bottom-style : solid ;
+     border-bottom-color: red ;
+    color : white ;
+}
+
+
+
+   #intro-scroll-button {
+    position: static; 
+    }
+
+   #intro-scroll-button button {
+    position: fixed;
+    margin-left: -50px;
+    left: 50%;
+    margin-bottom: 30px;
+    bottom: 0;
+    height: 70px;
+    line-height: 35px;
+    padding: 0;
+    padding-bottom: 5px;
+    overflow: visible; 
+    border-radius : 15px ;
+    opacity : .75 ;
+    color : white ;
+    background-color : black ;
+    }
+ 
+ .articles .floatedSection img {
+     float : center ;
+ height:auto;
+ width:auto;
+ max-width:100%;
+ max-height:50%;
+ border-radius : 5% ;
+}
+ </style>
+ 
+ <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+     
+</head>
+
+<body>
+    <section id="top">
+    <header>
+        <div class="articles">
+            <section class="floatedSection">
+                <nav class="topnav">
+                    <ul>
+                        <li><a href="http://www.cityofchicago.org/city/en/about.html">About</a><br /></li>
+                        <li><a href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a><br /></li>
+                        <li><a href="base.html" id="homelink">Chicago</a><br /></li>
+                        <li><a href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a><br /></li>
+                        <li><a href="http://www.cityofchicago.org/city/en/progs.html">Programs</a><br /></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header>
+    </section>
+    
+    <section  id="main"  class="articles chicago" >
+        
+        <section class="floatedSection">
+            <div id="title" class="leftarticle">
+                <h3>City of Chicago</h3>
+                Welcome
+            </div>
+        
+            <section class="centerarticle">
+                <div><p></p></div>
+            </section>
+            
+            <section  class="rightarticle">
+                <nav>
+                    <ul  class="sideNav">
+                        <li>Business
+                            <span style="display:none">daleyblue.jpg</span>
+                            <span style="display:none"><h3>Business</h3>Chicago Business</span>
+                            <span class="dash">  -----</span></li>
+                        <li>Culture and Recreation
+                            <span style="display:none">daleygreen.jpg</span>
+                            <span style="display:none"><h3>Culture</h3>Chicago Culture</span>
+                            <span class="dash">  -----</span></li>
+                        <li>Environment
+                            <span style="display:none">daleyviolet.jpg</span>
+                            <span style="display:none"><h3>Environment</h3>Chicago Environment</span>
+                            <span class="dash">  -----</span></li>
+                        <li>Housing and Development
+                            <span style="display:none">daleypink.jpg</span>
+                            <span style="display:none"><h3>Housing</h3>Chicago Housing</span>
+                            <span class="dash">  -----</span></li>
+                        <li>Social Services
+                            <span style="display:none">daleyred.jpg</span>
+                            <span style="display:none"><h3>Social Services</h3>Chicago Social Services</span>
+                            <span class="dash">  -----</span></li>
+                        <li>Civic Services
+                            <span style="display:none">daleyold.jpg</span>
+                            <span style="display:none"><h3>Civic Services</h3>Chicago Civic Services</span>
+                            <span class="dash">  -----</span></li>
+                        <li>Health
+                            <span style="display:none">daleylime.jpg</span>
+                            <span style="display:none"><h3>Health</h3>Chicago Health</span>
+                            <span class="dash">  -----</span></li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+    </section>
+
+<div id="bottom">
+	<div>
+		<p id="intro-scroll-button">
+			<button class="scroll-down">
+				&#9660; 
+				<span class="scroll-message">NEWS</span>
+				&#9660; 
+			</button>
+		</p>
+      
+    </div>
+    <div class="articles">
+        <section class="floatedSection">
+            <article class="leftarticle">
+                <h4>Chicago Air Quality</h4>
+                <img src="http://o.onionstatic.com/images/26/26720/16x9/700.jpg?5115" />
+                <h5>Safe to Breathe</h5>
+                <p>Does Chicago care about air quality?</p>
+                <p>You're
+                <a href="http://www.theonion.com/articles/environmental-study-finds-air-in-chicago-now-75-bu,36407/">darn shootin'!</a></p>
+            </article>
+            <article class="centerarticle">
+                <h4>Visit Chicago!</h4>
+                <img src="images/icecream.jpg" />
+                <h5>Chicago welcomes tourist from New York.</h5>
+                Guy from New York <a href="http://nyti.ms/YOKv0Z">comes to Chicago</a> with $100; Chicagoans generally leave him alone.
+            </article>
+            <article class="rightarticle">
+                <h4>Synergy</h4>
+                <h5>Rahm and Jose Canseco.</h5>
+                <img src="images/rahm-finger.jpg" />
+                <h5>Jose shoots his mouth off. Or his finger. Or - and his finger.</h5>
+                <p>Will Rahm consult Jose Canseco on Gun Violence?  It turns out they have a little something in common.  Catch up on Jose <a href="https://medium.com/the-cauldron/exclusive-interview-with-jose-canseco-s-twitter-6dc906b24a20">here.</a></p>
+            </article>
+        </section>
+        <section class="floatedSection">
+            <article class="leftarticle">
+                <h4>Welcome Wagon #1</h4>
+                <h4> Meet the New Governor!</h4>
+                <img src="images/rauner.jpg" />
+                <h5>Four of last nine went to jail!</h5>
+                <p>Can they indict one before he takes office?</p>
+                
+                <a href="http://www.ibtimes.com/illinois-governor-elect-bruce-rauner-received-cash-firms-managing-state-pension-money-1722669">Investing for Fun with Bruce!</a>
+            </article>
+            <article class="centerarticle">
+                <h4>Legal Pot: Is It Coming to Chicago?</h4>
+                <h5>It's Only a Traffic Ticket Now!</h5>
+                <video id="myVideo" controls="controls"
+                    width="100%" height="100%" muted="muted"
+                    poster="./images/open.jpg"
+                    preload="auto">
+                    <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                    <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                </video>
+                <p>Experience the Buzz</p>            </article>
+            <article class="rightarticle">
+                <h4>Welcome Wagon #2</h4>
+                <h4>Meet Chicago's New Treasurer!</h4>
+                <img src="http://www.chicagoreader.com/imager/b/magnum/15482214/8a96/KurtSummers-600.jpg" />
+                <p>...has the banking and private-equity crowd taken over?</p>
+                <a href="http://www.chicagoreader.com/chicago/mayor-emanuel-hires-investment-bankers-at-city-hall/Content?oid=15482198">or do people with money govern better?</a>
+            </article>
+        </section>
+    </div>
+</div>
+
+<! --
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+-->
+<script src="external/jquery/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready( function() { window.scrollTo(0,0) ;
+                  $( '#main').css('height', $(window).innerHeight() ) ;
+                  } ) ;
+//
+var oneScroll = function() {  $('#intro-scroll-button').css( "display","none") ;  window.scroll(0,$(window).innerHeight()- 50 ) ;   } ;
+ $( '#intro-scroll-button button').click( function() { oneScroll()  } ) ;
+ $(window).scroll( function() {$('#intro-scroll-button').css( "display","none") ; }  ) ;
+ 
+ 
+ 
+ var showRed = function( x ) {  $( x ).addClass( 'sideNavClicked' ) ; $( x ).find(".dash").show() ; } ;
+ var hideRed = function( x ) {  $( x ).removeClass( 'sideNavClicked' ) ; $( x ).find(".dash").hide() ; } ;
+ 
+ /* */
+    $( '.sideNav li' ).click(
+        function() {
+            $( '#main' ).css( {'background-image' :  'url("images/' +  $(this).find('span:first').text() + '")' } ) ;
+            $.each( $( '.sideNav li' ) , function(){ hideRed( this ) ; } ) ;
+            showRed( this ) ;
+            $( "#title").html( $(this).find('span:nth-child(2)' ).html() ) ;
+        }
+    );
+ </script>
+ 
+</body>
+</html>
